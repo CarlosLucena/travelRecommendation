@@ -1,6 +1,11 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 nav {
+    position: fixed;
     background-color: #1f6ef5;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,12 +33,38 @@ nav {
     height: 20px;
   }
 
-  #backgroundimage {
-    background-image: url("./world.jpg");
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh; 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-  }
+.social-media {
+  position: fixed;
+  bottom: 10%;
+  display: grid;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  z-index: 1000;
+}
+
+.social-media a {
+  display: block;
+}
+
+.social-media img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.container {
+  background-image: url("./images/world.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  display: flex;
+  flex-direction: column;
+  height: calc(100%);
+}
+
+.content {
+  flex: 1;
+}
