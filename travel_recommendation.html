@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Travel Recommendation</title>
     <link rel="stylesheet" href="./travel_recommendation.css">
+    <script src="./travel_recommendation.js" defer></script>
 </head>
 
 <body>
@@ -13,14 +14,14 @@
         <ul>
           <li><a href="./travel_recommendation.html" id="home">Home</a></li>
           <li><a href="./about_us.html" id="aboutUs">About Us</a></li>
-          <li><a href="./contact.html" id="contact">Contact Us</a></li>
+          <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
         </ul>
       </div>
       <div class="search-bar">
         <ul>
           <li><input type="text" id="searchText" placeholder="Search for">  </li>
-          <li><button id='searchBtn'>Search</button> </li>    
-          <li><button id='resetBtn'>Clear</button> </li>    
+          <li><button id='searchBtn' onclick="search()">Search</button> </li>    
+          <li><button id='resetBtn' onclick="reset()">Clear</button> </li>    
         </ul>
       </div>
     </nav>
@@ -28,8 +29,13 @@
     <div class="container">
       <div class="content">
         <br> <br>
-        <h1>Tour The Best of Australia!</h1>
-        <p> We organise everything for you.</p>
+        <h1>Explore Dream Destination.</h1>
+        <div id="content-area">
+          <p> We organise everything for your tour down under</p>
+        </div>
+        <div id="searchResults">
+
+        </div>
       </div>
     </div>
 
